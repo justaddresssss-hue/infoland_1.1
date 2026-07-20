@@ -149,7 +149,24 @@ grid-template-columns:1fr;
 }
 
 @media (max-width:600px){
+.header{
+    justify-content:center;
+    text-align:center;
+}
 
+.logo-box{
+    width:100%;
+    justify-content:center;
+}
+
+.logo-box img{
+    height:38px;
+    max-width:220px;
+}
+
+.badge{
+    margin-top:12px;
+}
 body{
 padding:10px;
 }
@@ -174,10 +191,14 @@ text-align:center;
 .logo-box{
     display:flex;
     align-items:center;
+    flex:1;
+    min-width:0;
 }
 
 .logo-box img{
-    height:36px;
-    width:auto;
     display:block;
+    max-width:100%;
+    width:auto;
+    height:48px;
+    object-fit:contain;
 }
