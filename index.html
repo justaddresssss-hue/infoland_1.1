@@ -1,196 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Флюгельный саморез — Крепком</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название товара — Крепком</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- [ШАБЛОН] Подключение Метрики -->
+    <script src="metrics.js" defer></script>
 </head>
-
 <body>
-
-<div class="container">
-
-<header class="header">
-<div class="logo-box">
-    <a href="https://krepcom.ru" target="_blank">
-        <img src="logo-new-krepcom_WATERMARK.png" alt="Крепком">
-    </a>
-</div>
-
-
-   
-
-</header>
-
-<section class="product-card">
-
-    <h2 class="product-title">Саморез флюгельный</h2>
-
-    <p class="product-subtitle">
-        Для надёжного крепления дерева к металлу без предварительного сверления.
-    </p>
-
-    <div class="product-grid">
-
-        <div class="left-column">
-
-            <div class="main-photo">
-                <a href="samorez_Himtefix_Flugel.jpg.webp" target="_blank">
-                    <img src="samorez_Himtefix_Flugel.jpg.webp" alt="Флюгельный саморез">
+    <div class="container">
+        <header class="header">
+            <div class="logo-box">
+                <a href="https://krepcom.ru" target="_blank">
+                    <!-- [ШАБЛОН] Путь к логотипу -->
+                    <img src="logo-new-krepcom_WATERMARK.png" alt="Крепком">
                 </a>
             </div>
+            <!-- [ШАБЛОН] Опциональный бейдж (например, "Хит" или "Новинка") -->
+            <!-- <span class="badge">Хит продаж</span> -->
+        </header>
 
-            <div class="video-block">
-                <h3><i class="fas fa-play-circle"></i> Видео работы</h3>
+        <main class="product-card">
+            <!-- [ШАБЛОН] Заголовок и описание -->
+            <h1 class="product-title">Саморез флюгельный</h1>
+            <p class="product-subtitle">Для надёжного крепления дерева к металлу без предварительного сверления.</p>
 
-                <div class="video-wrapper">
-                    <video controls preload="metadata">
-                        <source src="для брошюры 1.mov" type="video/mp4">
-                        Ваш браузер не поддерживает видео.
-                    </video>
+            <div class="product-grid">
+                <!-- ЛЕВАЯ КОЛОНКА: Медиа и сопутствующие товары -->
+                <div class="left-column">
+                    <div class="main-photo">
+                        <!-- [ШАБЛОН] Основное изображение -->
+                        <a href="samorez_Himtefix_Flugel.jpg.webp" target="_blank">
+                            <img src="samorez_Himtefix_Flugel.jpg.webp" alt="Флюгельный саморез" loading="lazy">
+                        </a>
+                    </div>
+
+                    <!-- [ШАБЛОН] Видео (удалить блок, если видео нет) -->
+                    <div class="video-block">
+                        <h3><i class="fas fa-play-circle"></i> Видео работы</h3>
+                        <div class="video-wrapper">
+                            <video controls preload="metadata" poster="poster.jpg">
+                                <source src="для брошюры 1.mov" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- [ШАБЛОН] Сопутствующие товары -->
+                    <section class="related-products">
+                        <h2>Сопутствующие товары</h2>
+                        <div class="related-grid">
+                            <!-- Копировать блок .related-card для каждого товара -->
+                            <a href="https://krepcom.ru/catalog/?q=биты" class="related-card">
+                                <img src="D130T30.jpg.webp" alt="Биты" loading="lazy">
+                                <h4>Биты</h4>
+                            </a>
+                            <a href="https://krepcom.ru/catalog/?q=перчатки" class="related-card">
+                                <img src="53245855.jpg.webp" alt="Перчатки" loading="lazy">
+                                <h4>Перчатки</h4>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- ПРАВАЯ КОЛОНКА: Информация и характеристики -->
+                <div class="right-column">
+                    <div class="info-card">
+                        <h3>Принцип работы</h3>
+                        <!-- [ШАБЛОН] Текст принципа работы -->
+                        <p>Бур сверлит древесину, крылышки расширяют отверстие, затем обламываются при контакте с металлом.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Назначение</h3>
+                        <!-- [ШАБЛОН] Текст назначения -->
+                        <p>Крепление досок, фанеры, ДСП, МДФ к металлическим конструкциям.</p>
+                    </div>
+
+                    <h3 class="section-title">Характеристики</h3>
+                    <div class="specs">
+                        <!-- [ШАБЛОН] Пары "Параметр - Значение" -->
+                        <div class="spec-item"><span>Материал</span><strong>Конструкционная сталь</strong></div>
+                        <div class="spec-item"><span>Покрытие</span><strong>Цинк</strong></div>
+                        <div class="spec-item"><span>Твёрдость</span><strong>52–56 HRC</strong></div>
+                        <div class="spec-item"><span>Шлиц</span><strong>Torx/PH</strong></div>
+                    </div>
+
+                    <h3 class="section-title">Размерный ряд</h3>
+                    <div class="sizes">
+                        <!-- [ШАБЛОН] Размеры -->
+                        <span>4.2×19</span><span>4.2×25</span><span>4.8×32</span><span>6.3×55</span><span>и другие</span>
+                    </div>
+
+                    <h3 class="section-title">Производители</h3>
+                    <div class="manufacturers">
+                        <!-- [ШАБЛОН] Ссылки на производителей -->
+                        <a href="https://krepcom.ru" class="manufacturer-card">Himtex</a>
+                        <a href="https://krepcom.ru" class="manufacturer-card">Harpoon</a>
+                    </div>
+
+                    <a class="site-link" href="https://krepcom.ru/catalog/samorezy/flugel/" target="_blank">
+                        Перейти в каталог
+                    </a>
                 </div>
             </div>
-            <div class="related-products">
+        </main>
 
-<h2>Сопутствующие товары</h2>
-
-<div class="related-grid">
-
-    <a href="https://krepcom.ru/catalog/?ss=%2Fcatalog%2F&q=биты&s=" class="related-card">
-
-        <img src="биты.jpg.webp">
-
-        <h4>Биты</h4>
-
-    </a>
-
-    <a href="https://krepcom.ru/catalog/?ss=%2Fcatalog%2F&q=перчатки&s=" class="related-card">
-
-        <img src="перчатки.jpg.webp">
-
-        <h4>Перчатки</h4>
-
-    </a>
-
-    <a href="https://krepcom.ru/catalog/?ss=%2Fcatalog%2F&q=уровень&s=" class="related-card">
-
-        <img src="уровень.jpg.webp">
-
-        <h4>Уровень</h4>
-
-    </a>
-
-</div>
-
-</div>
-
-        </div>
-
-        <div class="right-column">
-
-            <div class="info-card">
-                <h3>Принцип работы</h3>
-                <p>
-                    Бур сверлит древесину, крылышки расширяют отверстие,
-                    затем обламываются при контакте с металлом,
-                    после чего резьба надёжно фиксирует соединение.
-                </p>
-            </div>
-
-            <div class="info-card">
-                <h3>Назначение</h3>
-                <p>
-                    Крепление досок, фанеры, ДСП, МДФ и других материалов
-                    к металлическим конструкциям, обрешётке и профилям.
-                </p>
-            </div>
-
-            <h3 class="section-title">Характеристики</h3>
-
-          <div class="specs">
-
-                <div class="spec-item">
-                    <span>Материал</span>
-                    <strong>Конструкционная сталь</strong>
-                </div>
-
-                <div class="spec-item">
-                    <span>Покрытие</span>
-                    <strong>Цинк</strong>
-                </div>
-
-                <div class="spec-item">
-                    <span>Твёрдость</span>
-                    <strong>52–56 HRC</strong>
-                </div>
-
-                <div class="spec-item">
-                    <span>Шлиц</span>
-                    <strong>Torx/PH</strong>
-                </div>
-
-                <div class="spec-item">
-                    <span>Накончник</span>
-                    <strong>Сверло</strong>
-                </div>
-
-                <div class="spec-item">
-                    <span>Резьба</span>
-                    <strong>Полная</strong>
-                </div>
-
-            </div>
-
-            <h3 class="section-title">Размерный ряд</h3>
-
-            <div class="sizes">
-                <span>4.2×19</span>
-                <span>4.2×25</span>
-                <span>4.8×32</span>
-                <span>4.8×38</span>
-                <span>5.5×45</span>
-                <span>6.3×55</span>
-                <span>и другие</span>
-            </div>
-            <h3 class="section-title">Производители</h3>
-
-<div class="manufacturers">
-
-    <a href="https://krepcom.ru" target="_blank" class="manufacturer-card">
-        Himtex
-    </a>
-
-    <a href="https://krepcom.ru" target="_blank" class="manufacturer-card">
-        Harpoon
-    </a>
-    <a href="https://krepcom.ru" target="_blank" class="manufacturer-card">
-        Wkret-Met
-    </a>
-
-</div>
-
-                <a class="site-link"
-               href="https://krepcom.ru/catalog/samorezy/flugel/"
-               target="_blank">
-                Перейти на раздел сайта 
-            </a>
-        </div>
-
+        <footer class="footer">
+            <p>Отсканируйте QR-код на упаковке для перехода к описанию изделия.</p>
+        </footer>
     </div>
-
-</section>
-
-<footer class="footer">
-    Отсканируйте QR-код на упаковке для перехода к описанию изделия.
-</footer>
-
-</div>
-
 </body>
 </html>
