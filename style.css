@@ -202,3 +202,112 @@ text-align:center;
     height:48px;
     object-fit:contain;
 }
+.manufacturers{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:24px;
+}
+
+.manufacturer-card{
+
+    flex:1 1 160px;
+
+    background:#f8fafc;
+
+    border:1px solid #dbe3ea;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#1f2937;
+
+    font-weight:600;
+
+    transition:.2s;
+}
+
+.manufacturer-card:hover{
+
+    transform:translateY(-3px);
+
+    background:#4141c2;
+
+    color:white;
+
+}
+.related-products{
+
+    margin-top:30px;
+
+}
+
+.related-products h2{
+
+    margin-bottom:18px;
+
+}
+
+.related-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+}
+
+.related-card{
+
+    background:white;
+
+    border:1px solid #dbe3ea;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:#222;
+
+    transition:.25s;
+
+}
+
+.related-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.related-card img{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:contain;
+
+    padding:18px;
+    padding-left: 0px;
+
+
+}
+
+.related-card h4{
+
+    padding:18px;
+
+    text-align:center;
+    
+
+}
